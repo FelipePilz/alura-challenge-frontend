@@ -13,3 +13,13 @@ div {
     border-radius: 100%;
   }
 }
+
+@media screen and (max-width: 1110px) {
+  * {
+    background-color: #2d415b;
+  }
+
+  div {
+    display: inline-flex;
+  }
+}
