@@ -1,0 +1,46 @@
+div {
+  display: flex;
+  padding-top: 16px;
+  align-items: center;
+
+  i {
+    padding: 16px;
+    border-radius: 16px;
+    background-color: rgba(80, 129, 251, 0.16);
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.486);
+  }
+
+  p {
+    margin-left: 16px;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 0.486);
+  }
+}
+
+div:hover {
+  i {
+    background-color: rgba(80, 129, 251, 0.64);
+    color: white;
+  }
+
+  p {
+    color: white;
+  }
+}
+
+div:active {
+  i {
+    background-color: #5081fb;
+  }
+
+  p {
+    color: white;
+  }
+}
+@media screen and (max-width: 1110px) {
+  * {
+    background-color: #2d415b;
+  }
+}
