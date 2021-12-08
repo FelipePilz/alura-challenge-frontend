@@ -10,7 +10,14 @@
     <div class="user">
       <p>Usuário</p>
       <img src="../../../assets/images/avatar.png" />
-      <i class="fa fa-bars" aria-hidden="true"></i>
+      <i
+        id="menu-button"
+        class="fa fa-bars"
+        aria-hidden="true"
+        (click)="menu.abreMenu(); trocaIcone()"
+      >
+      </i>
+      <app-menu-mobile #menu></app-menu-mobile>
     </div>
   </nav>
 </header>

@@ -1,0 +1,29 @@
+* {
+  display: none;
+}
+
+.menu-bar {
+  position: fixed;
+  height: 83%;
+  width: 25%;
+  max-width: 250px;
+  margin: 0;
+  padding: 1em;
+  background: #2d415b;
+  bottom: 0;
+  right: -100%; /* Começar escondido */
+  transition: right 0.3s ease-out;
+  z-index: 1;
+  border-radius: 8px;
+  margin: 0 6px 6px 0;
+}
+
+.active-menu .menu-bar {
+  right: 0;
+}
+
+@media screen and (max-width: 1110px) {
+  * {
+    display: inherit;
+  }
+}
