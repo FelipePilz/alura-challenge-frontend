@@ -34,6 +34,7 @@
     i {
       display: none;
       font-size: 24px;
+      width: 24px;
     }
   }
 
@@ -79,6 +80,7 @@
     .user {
       width: 10%;
       display: inherit;
+      margin: 0 24px;
 
       p {
         display: none;
@@ -90,6 +92,14 @@
 
       i {
         display: inherit;
+        padding: 16px;
+        border-radius: 16px;
+      }
+      i:hover {
+        background-color: rgba(80, 129, 251, 0.08);
+      }
+      i:active {
+        background-color: rgba(80, 129, 251, 0.16);
       }
     }
   }
@@ -99,18 +109,27 @@
 @media screen and (max-width: 580px) {
   .navbar {
     .logo {
-      width: 70%;
+      width: 75%;
     }
 
     .search {
-      width: 15%;
+      width: 10%;
       text-align: right;
+
       input {
         display: none;
       }
 
       i {
         display: inherit;
+        padding: 16px;
+        border-radius: 16px;
+      }
+      i:hover {
+        background-color: rgba(80, 129, 251, 0.08);
+      }
+      i:active {
+        background-color: rgba(80, 129, 251, 0.16);
       }
     }
 
