@@ -1,3 +1,4 @@
+import { UserModule } from './components/user/user.module';
 import { MenuModule } from './components/menu/menu.module';
 import { HeaderModule } from './components/header/header.module';
 import { NgModule } from '@angular/core';

@@ -8,8 +8,7 @@
       <i class="fa fa-search" aria-hidden="true"></i>
     </div>
     <div class="user">
-      <p>Usuário</p>
-      <img src="../../../assets/images/avatar.png" />
+      <app-user></app-user>
       <i
         id="menu-button"
         class="fa fa-bars"
@@ -17,7 +16,7 @@
         (click)="menu.abreMenu(); trocaIcone()"
       >
       </i>
-      <app-menu-mobile #menu></app-menu-mobile>
     </div>
+    <app-menu-mobile #menu></app-menu-mobile>
   </nav>
 </header>
