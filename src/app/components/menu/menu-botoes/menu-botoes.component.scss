@@ -2,12 +2,12 @@ div {
   display: flex;
   padding-top: 16px;
   align-items: center;
+  cursor: pointer;
 
   i {
     padding: 16px;
     border-radius: 16px;
     background-color: rgba(80, 129, 251, 0.16);
-    cursor: pointer;
     color: rgba(255, 255, 255, 0.486);
   }
 
