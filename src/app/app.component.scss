@@ -1,5 +1,21 @@
+div {
+  display: flex;
+}
+
+app-menu {
+  width: 20%;
+}
+
+app-code-editor {
+  width: 80%;
+}
+
 @media screen and (max-width: 1110px) {
   app-menu {
     display: none;
+  }
+
+  app-code-editor {
+    width: 100%;
   }
 }
