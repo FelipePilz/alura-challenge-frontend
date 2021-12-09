@@ -74,6 +74,78 @@ form {
 
   .form {
     width: 22%;
+
+    .inputs {
+      margin: 0 12px 12px 28px;
+      padding-right: 32px;
+
+      > p {
+        text-transform: uppercase;
+        letter-spacing: 0.4em;
+        font-size: 12px;
+      }
+      input,
+      textarea,
+      select,
+      button {
+        margin-top: 16px;
+        width: 100%;
+        border: none;
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.16);
+        font-size: 16px;
+        line-height: 24px;
+        text-indent: 16px;
+      }
+
+      input:hover,
+      textarea:hover,
+      select:hover {
+        background-color: rgba(255, 255, 255, 0.24);
+      }
+
+      input {
+        height: 56px;
+        border-radius: 8px;
+      }
+
+      textarea {
+        height: 80px;
+        resize: none;
+        margin-bottom: 40px;
+      }
+
+      select {
+        height: 56px;
+        text-indent: 8px;
+        cursor: pointer;
+      }
+
+      input[type="color"] {
+        border: none;
+        padding: 8px;
+        background-color: #ff5e5600;
+        border: 1px solid #ffffff;
+        cursor: pointer;
+      }
+
+      button {
+        margin-top: 40px;
+        height: 56px;
+        text-indent: 0;
+        color: #051d3b;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #7ba4fc;
+      }
+
+      button:active {
+        background-color: #7ba4fc;
+        border: 4px solid rgba(80, 129, 251, 0.72);
+      }
+    }
   }
 }
 
