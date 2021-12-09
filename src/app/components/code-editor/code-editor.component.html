@@ -1,7 +1,7 @@
 <section>
   <form>
     <div class="layout">
-      <div class="background">
+      <div class="background" [ngStyle]="{ background: color }">
         <div class="editor">
           <div class="terminal-dots">
             <div class="red"></div>
@@ -27,7 +27,13 @@
             <option value="TypeScript">TypeScript</option>
             <option value="HTML">HTML</option>
           </select>
-          <input type="color" value="#6bd1ff" />
+          <input
+            id="colorPicker"
+            type="color"
+            [value]="color"
+            (change)="trocaCor(colorPicker.value)"
+            #colorPicker
+          />
         </div>
         <button type="#">Salvar projeto</button>
       </section>
