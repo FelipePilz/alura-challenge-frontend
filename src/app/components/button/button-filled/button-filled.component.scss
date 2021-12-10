@@ -1,0 +1,25 @@
+button {
+  width: 100%;
+  height: 56px;
+  font-size: 16px;
+  line-height: 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+
+  background-color: #5081fb;
+  color: #051d3b;
+}
+
+button:hover {
+  background-color: #7ba4fc;
+}
+
+button:active {
+  background: #7ba4fc;
+  border: 4px solid rgba(80, 129, 251, 0.72);
+}
+
+button:focus {
+  background: #96b9fd;
+}
