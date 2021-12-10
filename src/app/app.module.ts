@@ -1,3 +1,4 @@
+import { CommunityModule } from './components/community/community.module';
 import { CodeEditorModule } from './components/code-editor/code-editor.module';
 import { UserModule } from './components/user/user.module';
 import { MenuModule } from './components/menu/menu.module';
@@ -7,6 +8,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { CommunityComponent } from './components/community/community.component';
 
 @NgModule({
   declarations: [AppComponent],
@@ -16,6 +18,7 @@ import { AppComponent } from './app.component';
     HeaderModule,
     MenuModule,
     CodeEditorModule,
+    CommunityModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

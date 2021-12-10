@@ -1,4 +1,4 @@
-div {
+.botoes {
   display: flex;
   padding-top: 16px;
   align-items: center;
@@ -19,7 +19,7 @@ div {
   }
 }
 
-div:hover {
+.botoes:hover {
   i {
     background-color: rgba(80, 129, 251, 0.64);
     color: white;
@@ -30,7 +30,7 @@ div:hover {
   }
 }
 
-div:active {
+.botoes:active {
   i {
     background-color: #5081fb;
   }
@@ -39,8 +39,20 @@ div:active {
     color: white;
   }
 }
+
 @media screen and (max-width: 1110px) {
   * {
     background-color: #2d415b;
+  }
+}
+
+.botoes-ativado {
+  i {
+    background-color: #5081fb;
+    color: white;
+  }
+
+  p {
+    color: white;
   }
 }
