@@ -105,8 +105,7 @@ form {
       }
       input,
       textarea,
-      select,
-      button {
+      select {
         margin-top: 16px;
         width: 100%;
         border: none;
@@ -146,23 +145,6 @@ form {
         background-color: #ff5e5600;
         border: 1px solid #ffffff;
         cursor: pointer;
-      }
-
-      button {
-        margin-top: 40px;
-        height: 56px;
-        text-indent: 0;
-        color: #051d3b;
-        cursor: pointer;
-      }
-
-      button:hover {
-        background-color: #7ba4fc;
-      }
-
-      button:active {
-        background-color: #7ba4fc;
-        border: 4px solid rgba(80, 129, 251, 0.72);
       }
     }
   }

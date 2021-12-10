@@ -6,5 +6,5 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./button-filled.component.scss'],
 })
 export class ButtonFilledComponent {
-  @Input() mensagem = '';
+  @Input() mensagem: string = '';
 }
