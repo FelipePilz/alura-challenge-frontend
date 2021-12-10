@@ -137,15 +137,18 @@ form {
     }
 
     .form {
-      width: 100%;
-
+      width: 95%;
+      margin: auto;
       .inputs {
+        margin: auto 0;
+        padding-right: 0px;
         p {
           margin-top: 40px;
         }
         textarea {
           margin-bottom: 0;
         }
+        margin-bottom: 32px;
       }
     }
 
@@ -172,7 +175,14 @@ form {
         }
       }
     }
-
+    .form {
+      margin: auto;
+      .inputs {
+        margin: auto 0;
+        padding: 0;
+      }
+      margin-bottom: 32px;
+    }
     .personalizacao-flex {
       display: inherit;
       > select {
