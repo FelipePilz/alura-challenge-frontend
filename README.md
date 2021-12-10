@@ -1,27 +1,8 @@
-# AluraFrontend
+# Alura-Challenge-Frontend
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.0.2.
+Esse projeto tem como objetivo construir uma aplicação Front-end de acordo com a história oferecida pelos desafiadores, podendo ser desenvolvido em qualquer framework, por isso escolhi o Angular, gerando o projeto pelo [Angular CLI](https://github.com/angular/angular-cli) versão 13.0.2. <br><br>
+O design foi feito com base nas instruções dadas no [Modelo Figma](https://www.figma.com/file/Ve4hpTfmMa7yAFneoGtGKD/Alura-Challenge---Edi%C3%A7%C3%A3o-Front-end?node-id=207%3A729&viewport=86%2C-1148%2C0.3736729025840759) e para o quadro de tarefas foi usado o [Trello](https://trello.com/b/19ouy4RA/desafio-front-end-semana-1).
 
-## Development server
+## Server da aplicação
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Para rodar a aplicação coloque `ng serve` no terminal do diretório e vá para `http://localhost:4200/`. O aplicativo irá atualizar automaticamente caso haja alguma mudança nos arquivos.
