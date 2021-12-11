@@ -1,6 +1,6 @@
+import { Postagens } from './../../interfaces/postagem';
 import { NovoPostService } from './../../services/novo-post.service';
-import { NovoPost } from './../../interfaces/novo-post';
-import { Component, HostListener, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { Router } from '@angular/router';
 
@@ -49,7 +49,7 @@ const unfold = (f, seed) => {
   }
 
   public cadastrar() {
-    const novoPost = this.novaPostagem.getRawValue() as NovoPost;
+    const novoPost = this.novaPostagem.getRawValue() as Postagens;
     this.router.navigate(['comunidade']);
   }
 }

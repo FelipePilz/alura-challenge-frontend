@@ -1,5 +1,5 @@
+import { Postagens } from './../../interfaces/postagem';
 import { NovoPostService } from './../../services/novo-post.service';
-import { NovoPost } from './../../interfaces/novo-post';
 import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
@@ -8,11 +8,11 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./community.component.scss'],
 })
 export class CommunityComponent implements OnInit {
-  novoPost!: NovoPost;
+  postagens!: Postagens;
 
   constructor(private novoPostService: NovoPostService) {}
 
   ngOnInit(): void {
-    this.novoPost = this.novoPostService.getNovoPost();
+    this.postagens = this.novoPostService.getNovoPost();
   }
 }

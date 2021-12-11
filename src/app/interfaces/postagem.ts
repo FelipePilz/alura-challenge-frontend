@@ -1,4 +1,4 @@
-export interface NovoPost {
+interface Postagem {
   code: string;
   title: string;
   description: string;
@@ -9,3 +9,5 @@ export interface NovoPost {
   userName: string;
   avatarUrl: string;
 }
+
+export type Postagens = Array<Postagem>;
