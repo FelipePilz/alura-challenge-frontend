@@ -1,5 +1,5 @@
 <section>
-  <form>
+  <form [formGroup]="novaPostagem" (submit)="cadastrar()">
     <div class="layout">
       <div class="background" [ngStyle]="{ background: color }">
         <div class="editor">
@@ -8,7 +8,7 @@
             <div class="yellow"></div>
             <div class="green"></div>
           </div>
-          <textarea spellcheck="false">{{ editorPlaceholder }}</textarea>
+          <textarea formControlName="code" spellcheck="false"></textarea>
         </div>
       </div>
       <app-button-outlined
@@ -18,21 +18,24 @@
     <div class="form">
       <section class="inputs">
         <p>Seu projeto</p>
-        <input placeholder="Nome do seu projeto" />
-        <textarea placeholder="Descrição do seu projeto"></textarea>
+        <input formControlName="title" placeholder="Nome do seu projeto" />
+        <textarea
+          formControlName="description"
+          placeholder="Descrição do seu projeto"
+        ></textarea>
 
         <p>Personalização</p>
         <div class="personalizacao-flex">
-          <select>
+          <select formControlName="type">
             <option value="JavaScript">JavaScript</option>
             <option value="CSS">CSS</option>
             <option value="TypeScript">TypeScript</option>
             <option value="HTML">HTML</option>
           </select>
           <input
+            formControlName="background"
             id="colorPicker"
             type="color"
-            [value]="color"
             (change)="trocaCor(colorPicker.value)"
             #colorPicker
           />

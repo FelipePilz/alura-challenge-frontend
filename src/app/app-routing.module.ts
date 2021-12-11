@@ -7,7 +7,7 @@ const routes: Routes = [
   {
     path: '',
     pathMatch: 'full',
-    redirectTo: 'editor-de-codigo',
+    redirectTo: 'comunidade',
   },
   {
     path: 'editor-de-codigo',

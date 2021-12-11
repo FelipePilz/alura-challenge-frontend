@@ -1,0 +1,161 @@
+.comunidade {
+  margin-left: 0.6%;
+  display: flex;
+
+  .layout {
+    width: 50%;
+    text-align: center;
+    margin: 0 24px 24px 0;
+
+    .background {
+      width: 95%;
+      margin: auto;
+      border-radius: 8px;
+      height: 288px;
+      display: flex;
+
+      .editor {
+        border-radius: 8px;
+        margin: 32px auto;
+        vertical-align: middle;
+        width: 90%;
+        background-color: #141414;
+        box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.24);
+        padding: 16px;
+
+        .terminal-dots {
+          display: flex;
+          background-color: #141414;
+          border-radius: 8px;
+
+          div {
+            width: 12px;
+            height: 12px;
+            margin-right: 8px;
+            border-radius: 8px;
+          }
+
+          .red {
+            background: #ff5f56;
+          }
+
+          .yellow {
+            background: #ffbd2e;
+          }
+
+          .green {
+            background: #27c93f;
+          }
+        }
+
+        textarea {
+          margin-top: 16px;
+          width: 100%;
+          height: 168px;
+          max-width: 100%;
+          resize: none;
+          border: none;
+          background-color: #141414;
+          color: white;
+          overflow-y: scroll;
+
+          font-size: 14px;
+          line-height: 18px;
+        }
+
+        textarea:focus {
+          border: none;
+          outline: none;
+        }
+      }
+    }
+  }
+
+  .box {
+    width: 95%;
+    text-align: left;
+    margin: auto;
+    .informacoes {
+      padding: 24px 24px 0 24px;
+      background-color: rgba(0, 0, 0, 0.16);
+      border-radius: 0 8px;
+
+      * {
+        background-color: rgba(0, 0, 0, 0);
+      }
+
+      h2 {
+        //styleName: Title;
+        font-family: Inter;
+        font-size: 21px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 32px;
+        letter-spacing: 0em;
+        text-align: left;
+      }
+
+      p {
+        margin-top: 8px;
+      }
+
+      .flex-extra {
+        display: flex;
+
+        .icons {
+          margin-top: 32px;
+          display: flex;
+          padding-bottom: 32px;
+
+          i {
+            height: 17.5px;
+            border-radius: 0px;
+            margin-right: 10px;
+          }
+          span {
+            margin-right: 18px;
+          }
+        }
+
+        app-user {
+          margin: auto 0 auto auto;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1110px) {
+  .comunidade {
+    display: inherit;
+    .layout {
+      width: 100%;
+      .background {
+        height: 342px;
+        .editor {
+          textarea {
+            height: 222px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .comunidade {
+    .layout {
+      width: 100%;
+      .background {
+        height: 389px;
+        .editor {
+          width: 80%;
+
+          textarea {
+            height: 272px;
+          }
+        }
+      }
+    }
+  }
+}

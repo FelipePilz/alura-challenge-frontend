@@ -1,1 +1,29 @@
-<p>community works!</p>
+<section class="comunidade">
+  <div class="layout">
+    <div class="background" [ngStyle]="{ background: novoPost.background }">
+      <div class="editor">
+        <div class="terminal-dots">
+          <div class="red"></div>
+          <div class="yellow"></div>
+          <div class="green"></div>
+        </div>
+        <textarea spellcheck="false" [disabled]="true">{{
+          novoPost.code
+        }}</textarea>
+      </div>
+    </div>
+    <div class="box">
+      <div class="informacoes">
+        <h2>{{ novoPost.title }}</h2>
+        <p>{{ novoPost.description }}</p>
+        <div class="flex-extra">
+          <div class="icons">
+            <i class="fa fa-comment" aria-hidden="true"></i><span>2</span>
+            <i class="fa fa-heart" aria-hidden="true"></i><span>9</span>
+          </div>
+          <app-user></app-user>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
