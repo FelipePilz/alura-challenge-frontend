@@ -15,4 +15,8 @@ export class CommunityComponent implements OnInit {
   ngOnInit(): void {
     this.postagens = this.novoPostService.getNovoPost();
   }
+
+  public like(id: any) {
+    this.postagens[id].likes++;
+  }
 }

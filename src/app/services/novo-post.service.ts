@@ -16,6 +16,7 @@ export class NovoPostService {
   getNovoPost() {
     return [
       {
+        id: 0,
         code: `for(let i = 0; i < 10, i++){
   console.log('Oi '+i);
 }`,
@@ -30,6 +31,7 @@ export class NovoPostService {
           'https://external-content.duckduckgo.com/ip3/www.alura.com.br.ico',
       },
       {
+        id: 1,
         code: `.circle {
   display: block;
   background: black;
@@ -38,8 +40,8 @@ export class NovoPostService {
   width: 300px;
   margin: 0;
 }`,
-        title: 'CSS Ball',
-        description: 'Make your own ball with CSS',
+        title: 'CSS circle',
+        description: 'Make your own circle with CSS',
         type: 'CSS',
         background: '#B2D8D8',
         likes: 3002,

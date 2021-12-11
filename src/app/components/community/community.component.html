@@ -20,7 +20,12 @@
           <div class="icons">
             <i class="fa fa-comment" aria-hidden="true"></i
             ><span>{{ postagem.comments }}</span>
-            <i class="fa fa-heart" aria-hidden="true"></i
+            <i
+              class="fa fa-heart"
+              aria-hidden="true"
+              style="cursor: pointer"
+              (click)="like(this.postagem.id)"
+            ></i
             ><span>{{ postagem.likes }}</span>
           </div>
           <app-user

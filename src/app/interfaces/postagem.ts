@@ -1,4 +1,5 @@
 interface Postagem {
+  id: number;
   code: string;
   title: string;
   description: string;
