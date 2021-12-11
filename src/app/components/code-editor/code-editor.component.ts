@@ -1,3 +1,4 @@
+import { ButtonOutlinedComponent } from './../button/button-outlined/button-outlined.component';
 import { Postagens } from './../../interfaces/postagem';
 import { NovoPostService } from './../../services/novo-post.service';
 import { Component, Input, OnInit } from '@angular/core';
@@ -11,6 +12,7 @@ import { Router } from '@angular/router';
 })
 export class CodeEditorComponent implements OnInit {
   novaPostagem!: FormGroup;
+  clicked: boolean = false;
 
   @Input() color?: string;
 
@@ -51,5 +53,14 @@ const unfold = (f, seed) => {
   public cadastrar() {
     const novoPost = this.novaPostagem.getRawValue() as Postagens;
     this.router.navigate(['comunidade']);
+  }
+
+  public highlight(button: ButtonOutlinedComponent) {
+    if (this.clicked) {
+      button.mensagem = 'Ativar highlight';
+    } else {
+      button.mensagem = 'Desativar highlight';
+    }
+    this.clicked = !this.clicked;
   }
 }
