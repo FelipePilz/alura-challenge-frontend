@@ -21,6 +21,11 @@ export class NovoPostService {
       description: 'Eu aprendi isso na alura',
       type: 'JavaScript',
       background: '#d8c500',
+      likes: 12,
+      comments: 1,
+      userName: 'Alura',
+      avatarUrl:
+        'https://external-content.duckduckgo.com/ip3/www.alura.com.br.ico',
     };
   }
 }

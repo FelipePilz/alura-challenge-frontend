@@ -18,10 +18,15 @@
         <p>{{ novoPost.description }}</p>
         <div class="flex-extra">
           <div class="icons">
-            <i class="fa fa-comment" aria-hidden="true"></i><span>2</span>
-            <i class="fa fa-heart" aria-hidden="true"></i><span>9</span>
+            <i class="fa fa-comment" aria-hidden="true"></i
+            ><span>{{ novoPost.comments }}</span>
+            <i class="fa fa-heart" aria-hidden="true"></i
+            ><span>{{ novoPost.likes }}</span>
           </div>
-          <app-user></app-user>
+          <app-user
+            userName="{{ novoPost.userName }}"
+            avatarUrl="{{ novoPost.avatarUrl }}"
+          ></app-user>
         </div>
       </div>
     </div>

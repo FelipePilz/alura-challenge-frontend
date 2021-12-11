@@ -4,4 +4,8 @@ export interface NovoPost {
   description: string;
   type: string;
   background: string;
+  likes: number;
+  comments: number;
+  userName: string;
+  avatarUrl: string;
 }

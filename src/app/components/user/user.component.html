@@ -1,5 +1,10 @@
 <div>
-  <p>Usuário</p>
-  <i class="fa fa-user" aria-hidden="true"></i>
-  <!--<img src="../../../assets/images/avatar.png" />-->
+  <p *ngIf="userName; else login">{{ userName }}</p>
+  <ng-template #login>
+    <p>
+      <a>Login</a>
+    </p>
+  </ng-template>
+  <img src="{{ avatarUrl }}" *ngIf="avatarUrl; else icon" />
+  <ng-template #icon><i class="fa fa-user" aria-hidden="true"></i></ng-template>
 </div>

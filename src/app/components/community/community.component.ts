@@ -9,12 +9,10 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class CommunityComponent implements OnInit {
   novoPost!: NovoPost;
-  background = `#FFFFFF`;
 
   constructor(private novoPostService: NovoPostService) {}
 
   ngOnInit(): void {
     this.novoPost = this.novoPostService.getNovoPost();
-    this.background = this.novoPostService.getNovoPost().background;
   }
 }
